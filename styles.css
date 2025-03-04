@@ -65,13 +65,17 @@ footer {
 /* Estilos para el video de presentación */
 .video-presentacion {
     width: 100%;
-    max-height: 500px;
+    height: 60vh; /* Ajusta la altura al 60% del viewport */
     overflow: hidden;
+    position: relative;
     margin-bottom: 20px;
 }
 
 .video-presentacion video {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
